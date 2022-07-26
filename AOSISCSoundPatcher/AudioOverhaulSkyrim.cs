@@ -8,7 +8,7 @@ namespace AOSISCSoundPatcher
 {
     public static class AudioOverhaulSkyrim
     {
-        public static readonly ModKey ModKey = ModKey.FromNameAndExtension("Audio Overhaul Skyrim.esp");
+        public static readonly ModKey ModKey = ModKey.FromNameAndExtension(Program.Settings.Value.AOSespName);
 
         // Impact Data
         public static readonly FormLink<IImpactDataSetGetter> WPNzBlade1HandSmallImpactSet = new FormLink<IImpactDataSetGetter>(ModKey.MakeFormKey(0x05B6EA));

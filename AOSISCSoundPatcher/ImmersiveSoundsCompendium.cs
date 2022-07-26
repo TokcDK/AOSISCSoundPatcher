@@ -8,7 +8,7 @@ namespace AOSISCSoundPatcher
 {
     public static class ImmersiveSoundsCompendium
     {
-        public static readonly ModKey ModKey = ModKey.FromNameAndExtension("Immersive Sounds - Compendium.esp");
+        public static readonly ModKey ModKey = ModKey.FromNameAndExtension(Program.Settings.Value.ISCespName);
 
         // Jewelry Sounds
         public static readonly FormLink<ISoundDescriptorGetter> ITMRingUp = new FormLink<ISoundDescriptorGetter>(ModKey.MakeFormKey(0x08AB14));
@@ -24,16 +24,16 @@ namespace AOSISCSoundPatcher
         public static readonly FormLink<ISoundDescriptorGetter> WPNSwingBladeMediumBoundSD = new FormLink<ISoundDescriptorGetter>(ModKey.MakeFormKey(0x04762F));
 
         // Armor Addon Sound Sets
-        public static readonly IFormLink<IFootstepSetGetter> FSTArmor_LightLeather =    new FormLink<IFootstepSetGetter>(ModKey.MakeFormKey(0x46EE30));
-        public static readonly IFormLink<IFootstepSetGetter> FSTArmor_Leather =         new FormLink<IFootstepSetGetter>(ModKey.MakeFormKey(0x3951FB));
-        public static readonly IFormLink<IFootstepSetGetter> FSTArmor_Chitin =          new FormLink<IFootstepSetGetter>(ModKey.MakeFormKey(0x43C3E7));
-        public static readonly IFormLink<IFootstepSetGetter> FSTArmor_LightChain =      new FormLink<IFootstepSetGetter>(ModKey.MakeFormKey(0x39A326));
-        public static readonly IFormLink<IFootstepSetGetter> FSTArmor_RingMail =        new FormLink<IFootstepSetGetter>(ModKey.MakeFormKey(0x38AFA5));
-        public static readonly IFormLink<IFootstepSetGetter> FSTArmor_FullChain =       new FormLink<IFootstepSetGetter>(ModKey.MakeFormKey(0x473F5B));
-        public static readonly IFormLink<IFootstepSetGetter> FSTArmor_ChainPlate =      new FormLink<IFootstepSetGetter>(ModKey.MakeFormKey(0x4372BC));
-        public static readonly IFormLink<IFootstepSetGetter> FSTArmor_Plate =           new FormLink<IFootstepSetGetter>(ModKey.MakeFormKey(0x3900D0));
-        public static readonly IFormLink<IFootstepSetGetter> FSTArmor_HeavyPlate =      new FormLink<IFootstepSetGetter>(ModKey.MakeFormKey(0x33F049));
-        public static readonly IFormLink<IFootstepSetGetter> FSTArmor_DragonPlate =     new FormLink<IFootstepSetGetter>(ModKey.MakeFormKey(0x3FF791));
+        public static readonly IFormLink<IFootstepSetGetter> FSTArmor_LightLeather = new FormLink<IFootstepSetGetter>(ModKey.MakeFormKey(0x46EE30));
+        public static readonly IFormLink<IFootstepSetGetter> FSTArmor_Leather = new FormLink<IFootstepSetGetter>(ModKey.MakeFormKey(0x3951FB));
+        public static readonly IFormLink<IFootstepSetGetter> FSTArmor_Chitin = new FormLink<IFootstepSetGetter>(ModKey.MakeFormKey(0x43C3E7));
+        public static readonly IFormLink<IFootstepSetGetter> FSTArmor_LightChain = new FormLink<IFootstepSetGetter>(ModKey.MakeFormKey(0x39A326));
+        public static readonly IFormLink<IFootstepSetGetter> FSTArmor_RingMail = new FormLink<IFootstepSetGetter>(ModKey.MakeFormKey(0x38AFA5));
+        public static readonly IFormLink<IFootstepSetGetter> FSTArmor_FullChain = new FormLink<IFootstepSetGetter>(ModKey.MakeFormKey(0x473F5B));
+        public static readonly IFormLink<IFootstepSetGetter> FSTArmor_ChainPlate = new FormLink<IFootstepSetGetter>(ModKey.MakeFormKey(0x4372BC));
+        public static readonly IFormLink<IFootstepSetGetter> FSTArmor_Plate = new FormLink<IFootstepSetGetter>(ModKey.MakeFormKey(0x3900D0));
+        public static readonly IFormLink<IFootstepSetGetter> FSTArmor_HeavyPlate = new FormLink<IFootstepSetGetter>(ModKey.MakeFormKey(0x33F049));
+        public static readonly IFormLink<IFootstepSetGetter> FSTArmor_DragonPlate = new FormLink<IFootstepSetGetter>(ModKey.MakeFormKey(0x3FF791));
 
         // Armor Type Footsep Sounds
         public static readonly Dictionary<IFormLinkGetter<IKeywordGetter>, IFormLink<IFootstepSetGetter>> FootstepSets = new Dictionary<IFormLinkGetter<IKeywordGetter>, IFormLink<IFootstepSetGetter>>()
