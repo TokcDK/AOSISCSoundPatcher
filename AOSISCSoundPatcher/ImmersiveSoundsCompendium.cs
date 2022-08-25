@@ -8,7 +8,7 @@ namespace AOSISCSoundPatcher
 {
     public static class ImmersiveSoundsCompendium
     {
-        public static readonly ModKey ModKey = Program.Settings.Value.ISCespName;
+        public static readonly ModKey ModKey = Program.Settings.Value.ISCesp;
 
         // Jewelry Sounds
         public static readonly FormLink<ISoundDescriptorGetter> ITMRingUp = new FormLink<ISoundDescriptorGetter>(ModKey.MakeFormKey(0x08AB14));
